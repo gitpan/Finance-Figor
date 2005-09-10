@@ -1,0 +1,45 @@
+Finance::Figor version 1.0
+
+Instantiations of this module assist with automated management of one's
+finances, collecting data on a regular basis, comparing current balances to
+those of a month previously, and emailing the results to the user.
+
+The usual setup is to run Finance::Figor on a daily basis, which over time
+collects enough data to show trends, using a graph to overlay the data from the
+current month with that of the previous month. Major financial events, such as
+paychecks and rent/mortgage/car payements, tend to occur at the same point each
+month, so it is often more useful to look at the "delta" of the current balances
+versus those of a month ago, which is a better representation of the amount of
+discretionary spending available.
+
+This tight feedback loop allows the user to quickly correct aberrant spending
+habits, or to spend more freely, knowing that their available discretionary
+spending is above average. It also can help the user -- as in the case of this
+author, within one day of it happening -- detect fraudulent usage of one's bank
+accounts.
+
+
+INSTALLATION
+
+To install this module, run the following commands:
+
+    perl Makefile.PL
+    make
+    make test
+    make install
+
+
+DEPENDENCIES
+
+Finance::Account::Archive
+Mail::Sendmail
+POSIX
+Date::Calc
+
+
+COPYRIGHT AND LICENCE
+
+Copyright (C) 2005, Jeff Pace
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.
