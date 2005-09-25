@@ -54,7 +54,7 @@ use Mail::Sendmail 0.75;        # need version that supports attachments
 use POSIX;
 use Date::Calc qw( Today Add_Delta_Days Add_Delta_YM Add_Delta_YMD Date_to_Days );
 
-our $VERSION = '1.0';
+our $VERSION = '1.1';
 
 our $verbose = 0;
 
@@ -482,7 +482,7 @@ A reference to an array that is passed to the C<make_chart> method.
 
 =item B<make_chart>(... parameters ...)
 
-Emails the current statistics. Valid parameters:
+Creates and returns a chart for the current statistics. Valid parameters:
 
 =over 4
 
